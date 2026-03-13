@@ -12,6 +12,7 @@ function Footer() {
         <a href="https://www.linkedin.com/in/vincent68" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
         <a href="mailto:nathaniel.vincent68@gmail.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
       </div>
+      <p>Let's Connect!</p>
     </footer>
   );
 }

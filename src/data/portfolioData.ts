@@ -1,3 +1,10 @@
+// 1. Import your images at the very top of the file
+import tfiLogo from '../assets/images/tfi-logo.jpg'; 
+import scmLogo from '../assets/images/scm-logo.jpg';
+import binusLogo from '../assets/images/binus-logo.png';
+import ruangguruLogo from '../assets/images/ruangguru-logo.jpg';
+import revouLogo from '../assets/images/revou-logo.png';
+
 export interface ExperienceItem {
   date: string;
   title: string;
@@ -41,7 +48,7 @@ export const workExperience: ExperienceItem[] = [
   {
     date: 'July 2024 - Present',
     title: 'Career Break for Professional Development',
-    subtitle: 'Self-directed',
+    subtitle: '',
     description: [
       'Improved IELTS score from 4.5 to 6.5 through intensive preparation.',
       'Completed certifications in SQL, Python, machine learning, and data analytics via HackerRank, DataCamp, Kaggle, and RevoU.',
@@ -51,64 +58,64 @@ export const workExperience: ExperienceItem[] = [
   },
   {
     date: 'June 2023 - December 2023',
-    title: 'Business Analyst for CEO Office',
-    subtitle: 'PT. Surya Citra Media, Tbk',
+    title: 'PT. Surya Citra Media, Tbk',
+    subtitle: 'Business Analyst for CEO Office',
     description: [
       'Conducted market entry and competitor analysis using MySQL and Excel, contributing to 7% potential yearly revenue uplift.',
       'Built executive Power BI dashboards tracking KPIs enabling 3 high-impact strategic projects.',
       'Delivered corporate strategy decks achieving 32.3% cost efficiency improvement.',
     ],
-    logo: '',
+    logo: scmLogo,
   },
   {
     date: 'January 2023 - June 2023',
-    title: 'Digital Marketing Specialist',
-    subtitle: 'PT. Ruang Raya Indonesia (Ruangguru)',
+    title: 'PT. Ruang Raya Indonesia',
+    subtitle: 'Digital Marketing Specialist',
     description: [
       'Implemented SEO and funnel analysis with Google tools, boosting organic traffic 230% and monthly revenue 42% within four months.',
       'Improved conversion rates by 16% and scaled impressions to 400k+ monthly.',
       'Achieved top-5 Google rankings across multiple campaigns through on-page optimization and competitor benchmarking.',
     ],
-    logo: '',
+    logo: ruangguruLogo,
   },
 ];
 
 export const orgExperience: ExperienceItem[] = [
   {
     date: 'September 2020 - December 2023',
-    title: 'Chairman of Event & Volunteer',
-    subtitle: 'Teach For Indonesia',
+    title: 'Teach For Indonesia',
+    subtitle: 'Chairman of Event & Volunteer',
     description: [
       'Managed a team of 4 volunteers to design and execute community initiatives, including a large-scale greening project.',
       'Organized and launched community campaigns addressing 3 Sustainable Development Goals, increasing community engagement and awareness.',
       'Coordinated with over 10 local authorities to ensure project compliance and optimize resource allocation across community initiatives.',
     ],
-    logo: '',
+    logo: tfiLogo,
   },
 ];
 
 export const educationList: EducationItem[] = [
   {
     date: 'October 2025 - February 2026',
-    title: 'Full-stack Data Analytics Bootcamp',
-    subtitle: 'RevoU',
+    title: 'RevoU',
+    subtitle: 'Full-stack Data Analytics Bootcamp',
     description: [
       'Completed intensive training delivering end-to-end analytics projects using SQL, Python, and statistical methods.',
       'Transformed raw data into actionable insights and interactive BI dashboards to support data-driven decision-making.',
     ],
     typeText: '🎓',
-    logo: '',
+    logo: revouLogo,
   },
   {
     date: 'August 2020 - July 2024',
-    title: 'Bachelor of Economics – International Business Management',
-    subtitle: 'Bina Nusantara University',
+    title: 'Bina Nusantara University',
+    subtitle: 'Bachelor of Economics in International Business Management',
     description: [
       'GPA: 3.59/4.00',
       'Thesis: The Impact of E-Trust and E-Service Quality on E-Loyalty with E-Satisfaction as a Mediating Variable in Online Travel Agencies in Semarang City.',
     ],
     typeText: '🎓',
-    logo: '',
+    logo: binusLogo,
   },
 ];
 
