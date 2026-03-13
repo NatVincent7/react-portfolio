@@ -1,18 +1,22 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.0882f6dd.css",
-    "main.js": "/react-portfolio/static/js/main.d20f946e.js",
+    "main.js": "/react-portfolio/static/js/main.bf69043d.js",
     "static/js/453.b05d8aa5.chunk.js": "/react-portfolio/static/js/453.b05d8aa5.chunk.js",
     "static/media/profile.jpeg": "/react-portfolio/static/media/profile.a0c434c014c74abc6813.jpeg",
     "static/media/bg-light.png": "/react-portfolio/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/react-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/tfi-logo.jpg": "/react-portfolio/static/media/tfi-logo.0af1b73d5ddec22c9950.jpg",
+    "static/media/ruangguru-logo.jpg": "/react-portfolio/static/media/ruangguru-logo.d9cafa09a5e1833a4596.jpg",
+    "static/media/revou-logo.png": "/react-portfolio/static/media/revou-logo.5b3e3bd403b0f4a91429.png",
+    "static/media/scm-logo.jpg": "/react-portfolio/static/media/scm-logo.639bc962eaa9dbbb4e7a.jpg",
     "index.html": "/react-portfolio/index.html",
     "main.0882f6dd.css.map": "/react-portfolio/static/css/main.0882f6dd.css.map",
-    "main.d20f946e.js.map": "/react-portfolio/static/js/main.d20f946e.js.map",
+    "main.bf69043d.js.map": "/react-portfolio/static/js/main.bf69043d.js.map",
     "453.b05d8aa5.chunk.js.map": "/react-portfolio/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0882f6dd.css",
-    "static/js/main.d20f946e.js"
+    "static/js/main.bf69043d.js"
   ]
 }
