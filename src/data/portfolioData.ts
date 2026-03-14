@@ -179,7 +179,7 @@ export const projectsData: ProjectData[] = [
     imgUrl: '',
     techStack: ['SQL', 'BigQuery', 'Python', 'Tableau', 'Excel', 'Google Analytics'],
     github: '',
-    link: '',
+    link: 'https://drive.google.com/file/d/1yoBKrgPniSIZvLRL6xWQPggolVqDYaGU/view?usp=drive_link',
     background: 'TheLook is a North American digital fashion e-commerce platform specializing in apparel and accessories. The project analyzes e-commerce data — including events, orders, and users — to identify revenue-uplift opportunities amidst persistent U.S. macroeconomic weakness and rising customer acquisition costs squeezing profitability.',
     scopeOfWork: [
       'Funnel analysis across all customer journey stages to identify drop-off points',
@@ -206,7 +206,7 @@ export const projectsData: ProjectData[] = [
     imgUrl: '',
     techStack: ['Google Sheets', 'Python', 'Statistics', 'A/B Testing', 'Excel'],
     github: '',
-    link: '',
+    link: 'https://docs.google.com/presentation/d/1DWpCyGg_xcG2mA6yioYSJRbocyWkxpkiADDz5k6wVJw/edit?usp=drive_link',
     background: 'TokoBli is a major Indonesian e-commerce platform. The project evaluates the impact of "twin date" marketing events on business value and tests a new product page design to identify which drives higher customer spending.',
     scopeOfWork: [
       'Campaign performance evaluation across 10/10, 11/11, and 12/12 events',
@@ -233,7 +233,7 @@ export const projectsData: ProjectData[] = [
     imgUrl: '',
     techStack: ['Python', 'Pandas', 'Scikit-learn', 'K-means Clustering', 'EDA'],
     github: '',
-    link: '',
+    link: 'https://docs.google.com/presentation/d/1_e4MT188-aHbyZrKA3YASNMcfRfNDSSzzYdGCoCrnOo/edit?usp=drive_link',
     background: 'RevoBank seeks to increase credit card transaction frequency and volume by analyzing six months of sales performance data. The project focuses on understanding customer behavior through segmentation to drive targeted marketing strategies and enhance overall profitability.',
     scopeOfWork: [
       'Data cleaning: converting data types, handling missing values, removing duplicates',
@@ -260,7 +260,7 @@ export const projectsData: ProjectData[] = [
     imgUrl: '',
     techStack: ['BigQuery', 'SQL', 'Google Sheets', 'Data Visualization'],
     github: '',
-    link: '',
+    link: 'https://docs.google.com/presentation/d/1xJKKLHdeNcOdNru4EbLYEyJo2xNkURQzRIGvDYMj-g0/edit?usp=drive_link',
     background: 'RevoGrocers is a fictional grocery retail business operating in multiple locations selling a diverse range of grocery products. The project analyzes sales performance using a Kaggle dataset to optimize sales strategies, enhance customer experience, and increase revenue through data-driven decision-making.',
     scopeOfWork: [
       'Data cleaning and transformation using BigQuery',
