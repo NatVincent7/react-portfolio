@@ -36,3 +36,11 @@
         color: rgb(39, 40, 34);
     }
 }
+.dark-mode .cert-card svg {
+  fill: #ffffff !important;
+}
+
+.light-mode .cert-card svg {
+  fill: rgb(39, 40, 34) !important;
+}
+

@@ -172,8 +172,9 @@ function Timeline() {
             marginTop: '1rem',
           }}>
             {certifications.map((c, i) => (
-              <div
+              <div 
                 key={i}
+                className="cert-card"
                 style={{
                   border: '1px solid rgba(128,128,128,0.25)',
                   borderRadius: 12,
@@ -184,14 +185,11 @@ function Timeline() {
                   gap: '0.75rem',
                   transition: 'border-color 0.2s',
                   cursor: 'default',
-                  color: 'inherit',
                 }}
                 onMouseEnter={e => (e.currentTarget.style.borderColor = 'rgba(128,128,128,0.6)')}
                 onMouseLeave={e => (e.currentTarget.style.borderColor = 'rgba(128,128,128,0.25)')}
               >
-                <div style={{ color: 'inherit' }}>
-                  {getCertIcon(c.name)}
-                </div>
+                {getCertIcon(c.name)}
                 <h3 style={{ margin: 0, fontSize: '0.95rem', fontWeight: 600 }}>{c.name}</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
                   <Chip label={c.issuer} className="chip" size="small" />
