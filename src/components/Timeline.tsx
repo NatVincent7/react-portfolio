@@ -4,6 +4,7 @@ import { faBriefcase, faBuilding, faGraduationCap } from '@fortawesome/free-soli
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss';
+import Chip from '@mui/material/Chip';
 import { workExperience, orgExperience, educationList, certifications } from '../data/portfolioData';
 
 const iconStyle = { background: '#5000ca', color: '#fff' };
@@ -29,6 +30,37 @@ const BulletList = ({ items }: { items: string[] }) => (
     ))}
   </ul>
 );
+
+const IconDataAnalyst = () => (
+  <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-5h5v5zm5 0h-3V7h3v10z"/>
+  </svg>
+);
+
+const IconPython = () => (
+  <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+  </svg>
+);
+
+const IconSQL = () => (
+  <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zm0 2c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2zm0 14c-3.87 0-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23s4.39-.45 6-1.23V17c0 .5-2.13 2-6 2zm0-4c-3.87 0-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23s4.39-.45 6-1.23V13c0 .5-2.13 2-6 2z"/>
+  </svg>
+);
+
+const IconLanguage = () => (
+  <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+  </svg>
+);
+
+const getCertIcon = (name: string) => {
+  if (name.toLowerCase().includes('python')) return <IconPython />;
+  if (name.toLowerCase().includes('sql')) return <IconSQL />;
+  if (name.toLowerCase().includes('ielts')) return <IconLanguage />;
+  return <IconDataAnalyst />;
+};
 
 function Timeline() {
   const [tab, setTab] = useState<'work' | 'org'>('work');
@@ -141,32 +173,24 @@ function Timeline() {
           }}>
             {certifications.map((c, i) => (
               <div key={i} style={{
-                background: '#1a1a1a',
-                border: '1px solid #2a2a2a',
+                border: '1px solid rgba(128,128,128,0.25)',
                 borderRadius: 12,
-                padding: '1.2rem',
+                padding: '1.5rem',
                 display: 'flex',
-                gap: '1rem',
+                flexDirection: 'column',
                 alignItems: 'flex-start',
+                gap: '0.75rem',
                 transition: 'border-color 0.2s',
                 cursor: 'default',
               }}
-                onMouseEnter={e => (e.currentTarget.style.borderColor = '#5000ca')}
-                onMouseLeave={e => (e.currentTarget.style.borderColor = '#2a2a2a')}
+                onMouseEnter={e => (e.currentTarget.style.borderColor = 'rgba(128,128,128,0.6)')}
+                onMouseLeave={e => (e.currentTarget.style.borderColor = 'rgba(128,128,128,0.25)')}
               >
-                {c.logoUrl ? (
-                  <img src={c.logoUrl} alt="logo" style={{ width: 42, height: 42, borderRadius: 8, objectFit: 'contain', flexShrink: 0 }} />
-                ) : (
-                  <div style={{
-                    width: 42, height: 42, borderRadius: 8, background: c.logoColor,
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: '0.6rem', fontWeight: 700, color: '#fff', flexShrink: 0,
-                  }}>{c.logoText}</div>
-                )}
-                <div>
-                  <div style={{ fontWeight: 600, fontSize: '0.88rem', marginBottom: '0.2rem', color: '#fff' }}>{c.name}</div>
-                  <div style={{ color: '#a855f7', fontSize: '0.78rem' }}>{c.issuer}</div>
-                  <div style={{ color: '#9ca3af', fontFamily: 'monospace', fontSize: '0.72rem', marginTop: '0.2rem' }}>{c.year}</div>
+                {getCertIcon(c.name)}
+                <h3 style={{ margin: 0, fontSize: '0.95rem', fontWeight: 600 }}>{c.name}</h3>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                  <Chip label={c.issuer} className="chip" size="small" />
+                  <Chip label={c.year} className="chip" size="small" />
                 </div>
               </div>
             ))}
