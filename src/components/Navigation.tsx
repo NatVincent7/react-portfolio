@@ -26,6 +26,7 @@ const navItems = [
     ['Projects', 'projects'],
     ['Contact', 'contact']
 ];
+
 function Navigation({parentToChild, modeChange}: any) {
 
   const {mode} = parentToChild;
@@ -58,14 +59,25 @@ function Navigation({parentToChild, modeChange}: any) {
     const expertiseElement = document.getElementById(section);
     if (expertiseElement) {
       expertiseElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
+      console.log('Scrolling to:', expertiseElement);
     } else {
-      console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
+      console.error('Element with id "expertise" not found');
     }
   };
 
   const drawer = (
-    <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    // ✅ fixed: explicit bg + text color so nav items are visible in both modes
+    <Box
+      className="navigation-bar-responsive"
+      onClick={handleDrawerToggle}
+      sx={{
+        textAlign: 'center',
+        backgroundColor: '#fff',
+        height: '100%',
+        '& p, & span': { color: '#0d1116' },
+        '& svg': { color: '#0d1116' },
+      }}
+    >
       <p className="mobile-menu-top"><ListIcon/>Menu</p>
       <Divider />
       <List>
@@ -81,7 +93,8 @@ function Navigation({parentToChild, modeChange}: any) {
   );
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    // ✅ fixed: changed display from 'flex' to 'block' — was causing the page split
+    <Box sx={{ display: 'block' }}>
       <CssBaseline />
       <AppBar component="nav" id="navigation" className={`navbar-fixed-top${scrolled ? ' scrolled' : ''}`}>
         <Toolbar className='navigation-bar'>
@@ -114,7 +127,7 @@ function Navigation({parentToChild, modeChange}: any) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },

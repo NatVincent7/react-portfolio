@@ -167,12 +167,14 @@ function Timeline() {
           <h1>Certifications</h1>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', // ✅ fixed: was 'repeat(3, 1fr)' — now collapses on mobile
             gap: '1.5rem',
             marginTop: '1rem',
+            width: '100%',       // ✅ fixed: ensures grid doesn't overflow
+            boxSizing: 'border-box',
           }}>
             {certifications.map((c, i) => (
-              <div 
+              <div
                 key={i}
                 className="cert-card"
                 style={{
