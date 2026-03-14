@@ -122,7 +122,7 @@ export const educationList: EducationItem[] = [
 export const certifications: CertificationItem[] = [
   {
     name: 'Data Analyst Certification',
-    issuer: 'BSNP (Badan Standar Nasional Pendidikan)',
+    issuer: 'BSNP',
     year: 'February 2026',
     logoText: 'BSNP',
     logoColor: '#1d4ed8',
