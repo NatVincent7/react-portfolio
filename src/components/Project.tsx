@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import {
-  Dialog, DialogContent, DialogTitle, IconButton, Chip, Drawer
-} from '@mui/material';
+import { IconButton, Chip, Drawer } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import LaunchIcon from '@mui/icons-material/Launch';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -39,7 +37,17 @@ function Project() {
             className="project"
             key={index}
             onClick={() => handleOpen(project)}
-            style={{ cursor: 'pointer', position: 'relative' }}
+            style={{
+              cursor: 'pointer',
+              position: 'relative',
+              border: '1px solid rgba(128,128,128,0.25)',
+              borderRadius: 12,
+              overflow: 'hidden',
+              transition: 'border-color 0.2s',
+              color: 'inherit',
+            }}
+            onMouseEnter={e => (e.currentTarget.style.borderColor = 'rgba(128,128,128,0.6)')}
+            onMouseLeave={e => (e.currentTarget.style.borderColor = 'rgba(128,128,128,0.25)')}
           >
             {/* category badge */}
             <div style={{
@@ -47,32 +55,35 @@ function Project() {
               background: categoryColors[project.category] || '#5000ca',
               color: '#fff', fontSize: '0.72rem', fontWeight: 600,
               padding: '0.25rem 0.7rem', borderRadius: '999px',
+              zIndex: 1,
             }}>
               {project.category}
             </div>
 
+            {/* thumbnail or placeholder */}
             {project.thumbnail
-              ? <img src={project.thumbnail} className="zoom" alt="thumbnail" width="100%" style={{ borderRadius: 8 }} />
+              ? <img src={project.thumbnail} className="zoom" alt="thumbnail" width="100%" style={{ display: 'block', borderRadius: 0 }} />
               : <div style={{
-                  width: '100%', height: 160, borderRadius: 8,
-                  background: 'linear-gradient(135deg, #1e1e2e, #3b0764)',
+                  width: '100%', height: 160,
+                  background: 'rgba(128,128,128,0.08)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontSize: '2.5rem', marginBottom: '0.5rem',
+                  fontSize: '2.5rem',
                 }}>📊</div>
             }
 
-            <h2 style={{ fontSize: '1.1rem', marginTop: '1rem' }}>{project.title}</h2>
-            <p style={{ fontSize: '0.9rem', color: '#9ca3af', lineHeight: 1.6 }}>{project.description}</p>
-
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginTop: '1rem' }}>
-              {project.techStack.map((tech, i) => (
-                <Chip key={i} label={tech} size="small"
-                  sx={{ background: '#5000ca22', color: '#a855f7', border: '1px solid #5000ca55', fontSize: '0.72rem' }} />
-              ))}
-            </div>
-
-            <div style={{ marginTop: '1rem', fontSize: '0.85rem', color: '#a855f7', fontWeight: 500 }}>
-              View case study →
+            <div style={{ padding: '1rem' }}>
+              <h2 style={{ fontSize: '1.1rem', margin: '0 0 0.5rem' }}>{project.title}</h2>
+              <p style={{ fontSize: '0.9rem', opacity: 0.6, lineHeight: 1.6, margin: '0 0 1rem' }}>
+                {project.description}
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: '1rem' }}>
+                {project.techStack.map((tech, i) => (
+                  <Chip key={i} label={tech} className="chip" size="small" />
+                ))}
+              </div>
+              <div style={{ fontSize: '0.85rem', opacity: 0.5, fontWeight: 500 }}>
+                View case study →
+              </div>
             </div>
           </div>
         ))}
@@ -96,7 +107,6 @@ function Project() {
       >
         {selectedProject && (
           <div>
-            {/* header */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1.5rem' }}>
               <div>
                 <div style={{
@@ -114,7 +124,6 @@ function Project() {
               </IconButton>
             </div>
 
-            {/* cover image */}
             {(selectedProject.imgUrl || selectedProject.thumbnail) && (
               <img
                 src={selectedProject.imgUrl || selectedProject.thumbnail}
@@ -123,7 +132,6 @@ function Project() {
               />
             )}
 
-            {/* tools */}
             <div style={sectionHeadingStyle}>🛠 Tools & Technologies</div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
               {selectedProject.techStack.map((tech, i) => (
@@ -132,11 +140,9 @@ function Project() {
               ))}
             </div>
 
-            {/* background */}
             <div style={sectionHeadingStyle}>📋 Background</div>
             <p style={{ lineHeight: 1.8, color: '#d1d5db', margin: 0 }}>{selectedProject.background}</p>
 
-            {/* scope of work */}
             <div style={sectionHeadingStyle}>🎯 Scope of Work</div>
             <ul style={{ paddingLeft: '1.2rem', margin: 0 }}>
               {selectedProject.scopeOfWork.map((item, i) => (
@@ -144,11 +150,9 @@ function Project() {
               ))}
             </ul>
 
-            {/* process */}
             <div style={sectionHeadingStyle}>⚙️ Process</div>
             <p style={{ lineHeight: 1.8, color: '#d1d5db', margin: 0 }}>{selectedProject.process}</p>
 
-            {/* process diagram if available */}
             {selectedProject.processDiagram && (
               <img
                 src={selectedProject.processDiagram}
@@ -157,7 +161,6 @@ function Project() {
               />
             )}
 
-            {/* results */}
             <div style={sectionHeadingStyle}>📈 Results</div>
             <ul style={{ paddingLeft: '1.2rem', margin: 0 }}>
               {selectedProject.results.map((item, i) => (
@@ -165,7 +168,6 @@ function Project() {
               ))}
             </ul>
 
-            {/* links */}
             <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap' }}>
               {selectedProject.github && (
                 <a href={selectedProject.github} target="_blank" rel="noreferrer" style={{
