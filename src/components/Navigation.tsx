@@ -22,8 +22,8 @@ const navItems = [
     ['Skills', 'skills'],
     ['Experience', 'experience'],
     ['Education', 'education'],
-    ['Projects', 'projects'],
     ['Certifications', 'certifications'],
+    ['Projects', 'projects'],
     ['Contact', 'contact']
 ];
 function Navigation({parentToChild, modeChange}: any) {
