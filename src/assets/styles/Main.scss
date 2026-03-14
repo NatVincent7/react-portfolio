@@ -49,14 +49,11 @@
     }
 }
 
-/* ✅ ONLY THIS PART CHANGED */
 .about-section .image-wrapper {
     z-index: 2;
-    background: rgba(255,255,255,0.08);   /* background frame */
     padding: 8px;
     border-radius: 50%;                   /* make wrapper circle */
-    backdrop-filter: blur(4px);
-
+   
     img {
         width: 150px;
         height: 150px;                    /* IMPORTANT: same as width */
