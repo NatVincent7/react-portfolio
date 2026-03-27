@@ -1,22 +1,28 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.33bf0763.css",
-    "main.js": "/react-portfolio/static/js/main.6b0f455e.js",
+    "main.js": "/react-portfolio/static/js/main.c6b48e6d.js",
     "static/js/453.b05d8aa5.chunk.js": "/react-portfolio/static/js/453.b05d8aa5.chunk.js",
     "static/media/profile.jpeg": "/react-portfolio/static/media/profile.a0c434c014c74abc6813.jpeg",
     "static/media/bg-light.png": "/react-portfolio/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/react-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/revobank.png": "/react-portfolio/static/media/revobank.efd9870e63ed70de6e53.png",
+    "static/media/revogrocers.png": "/react-portfolio/static/media/revogrocers.f0939cc31f5914aa4403.png",
+    "static/media/tokobli.png": "/react-portfolio/static/media/tokobli.fb66e4395cc570dc5063.png",
     "static/media/tfi-logo.jpg": "/react-portfolio/static/media/tfi-logo.0af1b73d5ddec22c9950.jpg",
+    "static/media/revofinance.png": "/react-portfolio/static/media/revofinance.06a801b9679210493eb0.png",
+    "static/media/ecommerce.png": "/react-portfolio/static/media/ecommerce.ee6336a055231d04d618.png",
+    "static/media/revoshion.png": "/react-portfolio/static/media/revoshion.b874b4721ccaa03795ba.png",
     "static/media/ruangguru-logo.jpg": "/react-portfolio/static/media/ruangguru-logo.d9cafa09a5e1833a4596.jpg",
     "static/media/revou-logo.png": "/react-portfolio/static/media/revou-logo.5b3e3bd403b0f4a91429.png",
     "static/media/scm-logo.jpg": "/react-portfolio/static/media/scm-logo.639bc962eaa9dbbb4e7a.jpg",
     "index.html": "/react-portfolio/index.html",
     "main.33bf0763.css.map": "/react-portfolio/static/css/main.33bf0763.css.map",
-    "main.6b0f455e.js.map": "/react-portfolio/static/js/main.6b0f455e.js.map",
+    "main.c6b48e6d.js.map": "/react-portfolio/static/js/main.c6b48e6d.js.map",
     "453.b05d8aa5.chunk.js.map": "/react-portfolio/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33bf0763.css",
-    "static/js/main.6b0f455e.js"
+    "static/js/main.c6b48e6d.js"
   ]
 }
