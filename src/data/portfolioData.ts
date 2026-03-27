@@ -278,4 +278,73 @@ export const projectsData: ProjectData[] = [
       'Identified 4 targeted business strategies focusing on category prioritization and high-value shopper loyalty',
     ],
   },
+  {
+    title: 'RevoFinance: Expense & Budget Utilization Dashboard',
+    category: 'Product & Business Analytics',
+    description: 'Built an interactive personal finance dashboard to analyze spending behavior, monitor budget utilization, and identify financial risk patterns using Tableau.',
+    thumbnail: '',
+    imgUrl: '',
+    techStack: ['Tableau', 'Data Visualization', 'LOD Calculations', 'Dashboard Design', 'Business Analytics'],
+    github: '',
+    link: 'https://docs.google.com/presentation/d/1yLxvMHtWWei1MHJAteuca_DQvv_2Dn5w9Btz6GaiEFQ/edit?slide=id.g3b5e3652149_0_0#slide=id.g3b5e3652149_0_0',
+    background: 'RevoFinance is a digital banking product designed to help users manage personal finances. This project focuses on building an interactive Expense and Budget Utilization Dashboard to monitor spending behavior, identify risky financial patterns, and recommend product features or nudges to improve financial health.',
+    
+    scopeOfWork: [
+      'Developed interactive Tableau dashboard to monitor budget utilization and spending patterns',
+      'Connected Annual Budget, Merchant Master, and Personal Expenses datasets using logical data model',
+      'Created Level of Detail (LOD) calculations to track advanced financial metrics',
+      'Engineered ranking filters to identify top five merchants by spending',
+      'Built drill-down hierarchies for category-level and merchant-level analysis',
+      'Implemented color-coded indicators to highlight over-budget spending categories',
+      'Visualized online vs offline transaction distribution and monthly expense growth'
+    ],
+
+    process: 'Started by connecting three datasets (Annual Budget, Merchant Master, and Personal Expenses) using Tableau logical layer to ensure flexibility and data integrity. Designed scorecards for key financial metrics and built hierarchical drill-down structures for deeper analysis. Developed multiple visualizations including dual-axis bar charts, line charts, and geographic maps. Applied advanced calculations such as Level of Detail (LOD) expressions and ranking filters to identify spending patterns and top merchants.',
+
+    processDiagram: '',
+
+    results: [
+      'Identified over-budget spending categories using budget utilization tracking',
+      'Highlighted top five merchants contributing to highest expenses',
+      'Analyzed monthly expense growth compared to income trends to detect financial risk',
+      'Visualized online-to-offline transaction ratio to reduce online exposure',
+      'Mapped offline spending locations in Jakarta to understand spending concentration',
+      'Provided actionable recommendations for product nudges and financial behavior improvements'
+    ],
+  },
+  {
+    title: 'Revoshion: Corporate Segment Profit Optimization',
+    category: 'Business & Product Analytics',
+    description: 'Conducted end-to-end structured business analysis to identify root causes of profit decline and designed strategic recommendations to improve corporate segment profitability.',
+    thumbnail: '',
+    imgUrl: '',
+    techStack: ['Business Analysis', 'Root Cause Analysis', 'Hypothesis Testing', 'Data Analysis', 'Strategic Frameworks'],
+    github: '',
+    link: '',
+    
+    background: 'Revoshion is a fictional business scenario focused on optimizing the Corporate Segment profitability. Despite a 20.4% increase in sales, the Corporate Segment experienced a 13.6% profit decline. This project aimed to conduct an end-to-end structured business analysis to identify root causes and propose strategic recommendations to improve profitability and operational efficiency.',
+
+    scopeOfWork: [
+      'Conducted end-to-end structured business analysis for Corporate Segment profitability',
+      'Analyzed 13.6% profit decline despite 20.4% sales growth',
+      'Developed hypothesis-driven root cause analysis across revenue and cost drivers',
+      'Applied DARCI model for stakeholder alignment and structured decision-making',
+      'Prioritized five hypothesis branches including pricing, product mix, and operational costs',
+      'Evaluated discount strategies and corporate pricing efficiency',
+      'Developed profit optimization strategy targeting 15% growth within three months'
+    ],
+
+    process: 'Applied structured business analysis methodology using DARCI for stakeholder management and alignment. Conducted root cause analysis focusing on revenue drivers, cost structure, and operational expenses. Developed hypotheses including excessive discounting, low-margin product shift, and inefficient operational ROI. Prioritized hypotheses using OBIPR framework and evaluated data insights to identify key profitability drivers and strategic opportunities.',
+
+    processDiagram: '',
+
+    results: [
+      'Identified excessive discounting as primary driver of 13.6% profit decline',
+      'Detected shift toward low-margin product categories impacting profitability',
+      'Uncovered inefficient operational and logistics cost structure',
+      'Recommended minimum margin thresholds for corporate contracts',
+      'Proposed incentive realignment toward high-margin products',
+      'Designed strategic roadmap targeting 15% profit increase within three months'
+    ],
+  }
 ];
