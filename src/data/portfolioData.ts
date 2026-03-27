@@ -5,6 +5,14 @@ import binusLogo from '../assets/images/binus-logo.png';
 import ruangguruLogo from '../assets/images/ruangguru-logo.jpg';
 import revouLogo from '../assets/images/revou-logo.png';
 
+import ecommerceImg from '../assets/images/ecommerce.png';
+import tokobliImg from '../assets/images/tokobli.png';
+import revobankImg from '../assets/images/revobank.png';
+import revogrocersImg from '../assets/images/revogrocers.png';
+import revofinanceImg from '../assets/images/revofinance.png';
+import revoshionImg from '../assets/images/revoshion.png';
+
+
 export interface ExperienceItem {
   date: string;
   title: string;
@@ -175,8 +183,8 @@ export const projectsData: ProjectData[] = [
     title: 'E-commerce Analytics: Revenue & Funnel Optimization',
     category: 'Data Analysis',
     description: 'Analyzed TheLook e-commerce data to identify a 39.7% purchase-stage drop-off and recommend revenue uplift strategies without increasing marketing spend.',
-    thumbnail: '',
-    imgUrl: '',
+    thumbnail: ecommerceImg,
+    imgUrl: ecommerceImg,
     techStack: ['SQL', 'BigQuery', 'Python', 'Tableau', 'Excel', 'Google Analytics'],
     github: '',
     link: 'https://drive.google.com/file/d/1yoBKrgPniSIZvLRL6xWQPggolVqDYaGU/view?usp=drive_link',
@@ -202,8 +210,8 @@ export const projectsData: ProjectData[] = [
     title: 'TokoBli Campaign Performance & Product Page A/B Testing',
     category: 'Marketing Analytics',
     description: 'Analyzed twin-date campaign performance (10/10, 11/11, 12/12) and conducted A/B testing on product pages to optimize revenue and transaction volume for a major Indonesian e-commerce platform.',
-    thumbnail: '',
-    imgUrl: '',
+    thumbnail: tokobliImg,
+    imgUrl: tokobliImg,
     techStack: ['Google Sheets', 'Python', 'Statistics', 'A/B Testing', 'Excel'],
     github: '',
     link: 'https://docs.google.com/presentation/d/1DWpCyGg_xcG2mA6yioYSJRbocyWkxpkiADDz5k6wVJw/edit?usp=drive_link',
@@ -229,8 +237,8 @@ export const projectsData: ProjectData[] = [
     title: 'RevoBank: Customer Behaviour & Segmentation Analysis',
     category: 'Data Analysis',
     description: 'Segmented RevoBank credit card customers using K-means clustering to drive targeted marketing strategies and increase transaction frequency.',
-    thumbnail: '',
-    imgUrl: '',
+    thumbnail: revobankImg,
+    imgUrl: revobankImg,
     techStack: ['Python', 'Pandas', 'Scikit-learn', 'K-means Clustering', 'EDA'],
     github: '',
     link: 'https://docs.google.com/presentation/d/1_e4MT188-aHbyZrKA3YASNMcfRfNDSSzzYdGCoCrnOo/edit?usp=drive_link',
@@ -256,8 +264,8 @@ export const projectsData: ProjectData[] = [
     title: 'RevoGrocers: Sales Performance Analysis',
     category: 'Data Analysis',
     description: 'Analyzed sales performance for a multi-location grocery retailer using BigQuery SQL to optimize revenue strategies and enhance customer experience.',
-    thumbnail: '',
-    imgUrl: '',
+    thumbnail: revogrocersImg,
+    imgUrl: revogrocersImg,
     techStack: ['BigQuery', 'SQL', 'Google Sheets', 'Data Visualization'],
     github: '',
     link: 'https://docs.google.com/presentation/d/1xJKKLHdeNcOdNru4EbLYEyJo2xNkURQzRIGvDYMj-g0/edit?usp=drive_link',
@@ -282,8 +290,8 @@ export const projectsData: ProjectData[] = [
     title: 'RevoFinance: Expense & Budget Utilization Dashboard',
     category: 'Product & Business Analytics',
     description: 'Built an interactive personal finance dashboard to analyze spending behavior, monitor budget utilization, and identify financial risk patterns using Tableau.',
-    thumbnail: '',
-    imgUrl: '',
+    thumbnail: revofinanceImg,
+    imgUrl: revofinanceImg,
     techStack: ['Tableau', 'Data Visualization', 'LOD Calculations', 'Dashboard Design', 'Business Analytics'],
     github: '',
     link: 'https://docs.google.com/presentation/d/1yLxvMHtWWei1MHJAteuca_DQvv_2Dn5w9Btz6GaiEFQ/edit?slide=id.g3b5e3652149_0_0#slide=id.g3b5e3652149_0_0',
@@ -316,8 +324,8 @@ export const projectsData: ProjectData[] = [
     title: 'Revoshion: Corporate Segment Profit Optimization',
     category: 'Business & Product Analytics',
     description: 'Conducted end-to-end structured business analysis to identify root causes of profit decline and designed strategic recommendations to improve corporate segment profitability.',
-    thumbnail: '',
-    imgUrl: '',
+    thumbnail: revoshionImg,
+    imgUrl: revoshionImg,
     techStack: ['Business Analysis', 'Root Cause Analysis', 'Hypothesis Testing', 'Data Analysis', 'Strategic Frameworks'],
     github: '',
     link: '',

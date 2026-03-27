@@ -102,6 +102,7 @@ function Project() {
             color: '#fff',
             padding: '2rem',
             overflowY: 'auto',
+            boxSizing: 'border-box',
           }
         }}
       >
