@@ -11,7 +11,7 @@ import revobankImg from '../assets/images/revobank.png';
 import revogrocersImg from '../assets/images/revogrocers.png';
 import revofinanceImg from '../assets/images/revofinance.png';
 import revoshionImg from '../assets/images/revoshion.png';
-
+import peopleuImg from '../assets/images/peopleu.png';
 
 export interface ExperienceItem {
   date: string;
@@ -179,6 +179,34 @@ export interface ProjectData {
 }
 
 export const projectsData: ProjectData[] = [
+  {
+    title: 'Pricing Strategy & Funnel Performance Evaluation: B2B SaaS',
+    category: 'Product & Business Analytics',
+    description: 'Analyzed PeopleU SaaS pricing and promotion strategies across 3 subscription tiers, recommending a 10% price reduction projected to increase revenue by 40–50%.',
+    thumbnail:peopleuImg,
+    imgUrl: peopleuImg,
+    techStack: ['SQL', 'BigQuery', 'Power BI', 'Price Elasticity'],
+    github: '',
+    link: 'https://docs.google.com/presentation/d/1DF-Nwq9coRdGY6xf5GU7rlhd54YlG_khRClnDbVMcbY/edit?slide=id.g3d5bb1d3a18_0_8#slide=id.g3d5bb1d3a18_0_8',
+    background: 'PeopleU is a B2B SaaS company offering an HR management platform serving companies across various industries and scales. The project evaluates two promotion strategies (10% discount in 2021 vs. 20% in 2022) and formulates optimal pricing per subscription type to maximize revenue without sacrificing conversion.',
+    scopeOfWork: [
+      'Sales funnel analysis across 8 stages from lead registration to deal won',
+      'Promotion strategy comparison: 2021 (10%) vs. 2022 (20%) discount performance',
+      'Price Elasticity of Demand (PED) calculation using the Midpoint Method per subscription tier',
+      'Revenue simulation under 5% and 10% price reduction scenarios',
+      'Customer profiling by company size and industry for each subscription type',
+      'Strategic pricing and sales personalization recommendations',
+    ],
+    process: 'Followed a five-step framework: problem understanding, data preparation and cleaning, exploratory data analysis, data analysis, and insight and recommendations. Key metrics analyzed included conversion rate, deal won rate, volume of contracts, total revenue, PED coefficients, and customer segmentation by industry and company size.',
+    processDiagram: '',
+    results: [
+      '2022 promotion (20% discount) outperformed 2021 by +13.9% conversion rate and +200% total revenue',
+      'Business subscription had the highest price elasticity (PED: 6.46), followed by Enterprise (5.74) and Startup (5.01)',
+      '10% price reduction projected to increase revenue by 40–50% across all tiers',
+      'Business tier showed the highest revenue potential at +4,086,000 (+48%) with optimized pricing',
+      'Customer profiles mapped per tier: Business (SME F&B & Tech), Enterprise (Large Retail & Tech), Startup (Mid-Large Tech & Retail)',
+    ],
+  },
   {
     title: 'E-commerce Analytics: Revenue & Funnel Optimization',
     category: 'Data Analysis',
