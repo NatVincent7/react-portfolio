@@ -187,7 +187,7 @@ export const projectsData: ProjectData[] = [
     imgUrl: peopleuImg,
     techStack: ['SQL', 'BigQuery', 'Power BI', 'Price Elasticity'],
     github: '',
-    link: 'https://docs.google.com/presentation/d/1DF-Nwq9coRdGY6xf5GU7rlhd54YlG_khRClnDbVMcbY/edit?slide=id.g3d5bb1d3a18_0_8#slide=id.g3d5bb1d3a18_0_8',
+    link: 'https://docs.google.com/presentation/d/1DF-Nwq9coRdGY6xf5GU7rlhd54YlG_khRClnDbVMcbY/edit?usp=sharing',
     background: 'PeopleU is a B2B SaaS company offering an HR management platform serving companies across various industries and scales. The project evaluates two promotion strategies (10% discount in 2021 vs. 20% in 2022) and formulates optimal pricing per subscription type to maximize revenue without sacrificing conversion.',
     scopeOfWork: [
       'Sales funnel analysis across 8 stages from lead registration to deal won',
